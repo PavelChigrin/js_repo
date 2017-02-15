@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+<script>function mathpow(a, b) {
+  var result = a;
+
+  for (var i = 1; i < b; i++) {
+    result *= a;
+  }
+
+  return result;
+}
+
+var a = prompt("Введите число >1", '');
+var b = prompt("Ведите степень возведения >1", '');
+
+if (b <= 1) {
+  alert('Степень возведения должна быть >1');
+} else {
+  alert( mathpow(a, b) );
+}
+  </script>
+</body>
+
+</html>
